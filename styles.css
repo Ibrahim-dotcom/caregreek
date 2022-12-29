@@ -132,7 +132,7 @@ body, html {
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-around;
-	width: 90vmin;
+	/*width: 90vmin;*/
 	margin: auto;
 	margin-top: -125px;
 	padding: 20px;
@@ -262,7 +262,7 @@ body, html {
 	
 	#logo{
 
-		min-width: 12vw;
+		min-width: 11vw;
 	}
 
 	#drop-down .btn{
@@ -275,7 +275,7 @@ body, html {
 		flex-flow: column wrap;
 		width: 100vw;
 		padding: auto 30vw;
-		height: 55vh;
+		/*height: 55vh;*/
 	}
 	h1{
 		font-size: 55px;
@@ -303,18 +303,26 @@ body, html {
 		width: 171.71px;
 		height: 181.14px;
 		position: absolute;
-		top: 30vh;
+		top: 20vh;
 		left: 0.5vw;
 	}
 
 
 	#sam-odion{
 		position: absolute;
-		top: 77vh;
+		top: 57vh;
 		left: 48vw;
-		width: 25vw;
-		height: 15vh;
+		width: 30vw;
+		min-height: 15vh;
+		padding: 5px;
 	}
+
+	#sam-details{
+		width: fit-content;
+		height: max-content;
+	}
+
+
 
 
 	#star{
@@ -323,20 +331,28 @@ body, html {
 
 	#polygon{
 		position: absolute;
-		top: 2vh;
-		right: -8vw;
+		top:-12vh;
+		right: -6vw;
 	}
 
 	#small-circle{
 		position: absolute;
-		right: 16vw;
+		right: 15vw;
+		top: -12vh;
 	}
 
 	#big-image{	
-		width: 40vw;
+		width: 35vw;
 		max-width: 100%;
 		margin: 0;
-		margin-right: 10vw;
+		overflow: hidden;
+	}
+
+	#big-image-wrapper{
+		position: absolute;
+		top: 12vh;
+		right: 10vw;
+
 	}
 
 	#about-us{
@@ -345,22 +361,22 @@ body, html {
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		margin: auto 5vw;
+		margin-left: 10vw;
 		
 	}
 
 	#about-us h2{
 		position: absolute;
-		right: 26vw;
-		top: 18vh;
+		right: 35vw;
+		top: 17vh;
+		margin: 0;
 	}
 
 	#about-images{
-		margin-left: 12vw;
 		width: 40vw;
-		position: static;
+		position: absolute;
 		left: 0;
-		margin-top: 15vh;
+		top: 10vh;
 	}
 
 	#about-images img{
@@ -369,22 +385,26 @@ body, html {
 	}
 
 	#about-us p{
-		margin: auto;
 		width: 30vw;
-		position: static;
-		left: 62vw;
-		top: 30vh;
+		position:absolute;
 		line-height: 25px;
+		top: 30vh;
+		right: 15vw;
+		margin: 0;
 	}
 
 	#about-us .btn{
 		position: absolute;
 		top: 50vh;
-		left:54vw;
+		right: 28vw;
+		margin: 0;
+		margin-top: 15vh;
 	}
 
 	#why-us{
-		margin: 10vh 4vw;
+		margin: 80vh 4vw;
+		position: relative;
+		margin-bottom: 0;
 
 	}
 
@@ -395,14 +415,15 @@ body, html {
 
 	#why-us img{
 		position: absolute;
-		right: 10vw;
+		top: 20vh;
+		right: 7vw;
 		width: 40vw;
-		margin: 5vw;
 	}
 
 	#why-us ul{
 		width: 35vw;
 		line-height: 5vh;
+
 	}
 
 	#our-services{
@@ -410,7 +431,7 @@ body, html {
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: space-around;
-		margin: 20vh 15vw;
+		margin: 100px 15vw;
 
 	}
 
@@ -418,7 +439,8 @@ body, html {
 	.card{
 		margin-top: 0;
 		width: 21vw;
-		height: 40vh;
+		min-height: 40vh;
+		height: max-content;
 	}
 
 	#our-services > h2{
