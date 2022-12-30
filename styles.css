@@ -1,10 +1,11 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Helvetica;
+	font-family: 'Chivo',Arial, Helvetica;
 	background-color: #fefdf7;
 	width: 100vw;
 	margin-bottom: 50px;
+	font-weight: 400;
 	scroll-behavior: smooth;
 }
 
@@ -28,11 +29,14 @@ body, html {
 		bottom: 0;
 		margin-top: 0;
 		width: 70vw;
-		border: 2px darkorange;
-		z-index: 2;
-		background-color: white;
+		z-index: 5;
+		background-color: #f5f5f5;
 		list-style-type: none;
 		line-height: 15vw;
+		font-family: 'Chivo';
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		color: #806f27;
 	}
 
 	h1 {
@@ -71,6 +75,17 @@ body, html {
 		position: absolute;
 		top: 42%;
 	}
+
+	#empty-div{
+		position: absolute;
+		width: 70vmin;
+		height: 50vmin;
+		background-color: #F2EAC3;
+		border-radius: 10px;
+		right: 0;
+		top: 50px;
+	}
+	
 	
 	
 }
@@ -105,7 +120,7 @@ body, html {
 
 .btn{
 	background-color: #f2d85f;
-	border-radius: 20px;
+	border-radius: 20px 0 20px 20px;
 	border-top-right-radius: 0;
 	box-sizing: border-box;
 	display: flex;
@@ -132,7 +147,6 @@ body, html {
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-around;
-	/*width: 90vmin;*/
 	margin: auto;
 	margin-top: -125px;
 	padding: 20px;
@@ -177,8 +191,7 @@ body, html {
 
 #about-us p{
 	margin: 30px;
-	color: #706000;
-	opacity: 85%;
+	color: #806f27;
 }
 
 #about-us .btn{
@@ -188,17 +201,22 @@ body, html {
 #why-us{
 	padding-left: 20px;
 	margin-bottom: 80px;
+	position: relative;
 }
 
 #why-us img{
 	border-radius: 12px;
 	width: 90vmin;
+	margin-top: 50px;
+	z-index: 2;
+	position: sticky;
 }
+
+
 
 #why-us ul{
 	list-style-type: none;
-	color: #706000;
-	opacity: 85%;
+	color: #806f27;
 	line-height: 1.8;
 }
 
@@ -218,7 +236,8 @@ body, html {
 
 .card{
 	width: 80vw;
-	border: 2px solid whitesmoke;
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 6px 24px rgba(0, 0, 0, 0.05);
+	color: #806f27;
 	line-height: 1.8;
 	border-radius: 10px;
 	padding: 15px;
@@ -226,8 +245,19 @@ body, html {
 	margin: 30px auto;
 }
 
+.card img{
+	background-color: #fff;
+	box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.16), 0px 0px 0px 1px rgba(0, 0, 0, 0.06);
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.card h2{
+	color: #3d340c;
+}
+
 .card p{
-	color: #706000;
+	color: #806f27;
 }
 
 #our-services .btn{
@@ -247,7 +277,7 @@ body, html {
 	
 	#drop-down{
 		list-style-type: none;
-		color: #706000;
+		color: #806f27;
 
 	}
 
@@ -275,7 +305,6 @@ body, html {
 		flex-flow: column wrap;
 		width: 100vw;
 		padding: auto 30vw;
-		/*height: 55vh;*/
 	}
 	h1{
 		font-size: 55px;
@@ -357,25 +386,24 @@ body, html {
 
 	#about-us{
 		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
+		flex-flow: column nowrap;
+		align-items: flex-end;
 		position: relative;
-		margin-left: 10vw;
+		padding: 10vw;
 		
 	}
 
+
+
 	#about-us h2{
-		position: absolute;
-		right: 35vw;
-		top: 17vh;
-		margin: 0;
+		margin-right: 24vw;
 	}
+	
 
 	#about-images{
 		width: 40vw;
 		position: absolute;
-		left: 0;
+		left: 10vw;
 		top: 10vh;
 	}
 
@@ -386,26 +414,16 @@ body, html {
 
 	#about-us p{
 		width: 30vw;
-		position:absolute;
 		line-height: 25px;
-		top: 30vh;
-		right: 15vw;
-		margin: 0;
 	}
 
 	#about-us .btn{
-		position: absolute;
-		top: 50vh;
-		right: 28vw;
-		margin: 0;
-		margin-top: 15vh;
+		margin-right: 19vw;
 	}
 
 	#why-us{
-		margin: 80vh 4vw;
 		position: relative;
-		margin-bottom: 0;
-
+		margin: auto 3vw;
 	}
 
 	#why-us h2{
@@ -415,7 +433,7 @@ body, html {
 
 	#why-us img{
 		position: absolute;
-		top: 20vh;
+		top: 12vh;
 		right: 7vw;
 		width: 40vw;
 	}
@@ -431,7 +449,7 @@ body, html {
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: space-around;
-		margin: 100px 15vw;
+		margin: 140px 15vw 100px 15vw;
 
 	}
 
@@ -453,6 +471,7 @@ body, html {
 		font-size: medium;
 		text-align: left;
 	}
+
 
 	#our-services .btn{
 		margin: 2vw auto;
