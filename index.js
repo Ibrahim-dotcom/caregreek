@@ -40,19 +40,4 @@ showMore.forEach(obj =>{
         }
     
     })
-})
-
-/*showMore.addEventListener('click', () => {
-    let direction = getComputedStyle(showMore).transform
-    let paragraph = selectAll('.faq-card p');
-    console.log(paragraph)
-    if(direction == 'matrix(1, 0, 0, 1, 0, 0)') {
-        showMore.style.transform = 'rotate(180deg)';
-        paragraph.style.display = 'none'
-    }
-    else{
-        showMore.style.transform = 'rotate(0deg)';
-        paragraph.style.display = 'block';
-
-    }
-})*/
+});

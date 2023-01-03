@@ -3,7 +3,7 @@ body, html {
 	padding: 0;
 	font-family: 'Chivo',Arial, Helvetica;
 	background-color: #fefdf7;
-	width: 100vw;
+	width: 100vw;																																																																																																															
 	margin-bottom: 50px;
 	font-weight: 400;
 	scroll-behavior: smooth;
@@ -18,11 +18,16 @@ body, html {
 
 #about-images img {
    border-radius: 20px;
-   height: 60vmax;
+   height: 50vmax;
    width: 28vw;
 }
 
 @media  only screen and (max-width: 650px) {
+
+	body{
+		width: 100vw;
+		overflow-x: hidden;
+	}
 	nav{
 		width: 100vw;
 		max-height: 100vh;
@@ -120,6 +125,10 @@ body, html {
 	#our-gallery img{
 		margin: 5px auto;
 		width: 90vw;
+	}
+
+	#yellow-woman{
+		display: none;
 	}
 	
 	
@@ -239,62 +248,6 @@ body, html {
 }
 
 
-#form-wrapper{
-	background-color: #3d340c;
-	padding: 20px 20px 0 20px;
-	overflow: hidden;
-}
-
-#form-wrapper > h2, #form-wrapper p{
-	color: white;
-}
-
-form{
-	background-color: white;
-	padding: 10px;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-form > h2{
-	color: #3d340c;
-}
-
-form .btn{
-	border-radius: 0px;
-	align-self: flex-start;
-	border: none;
-	margin-top: 10px;
-}
-
-input{
-	outline: none;
-	border: none;
-}
-
-fieldset{
-	width: 90%;
-	height: 40px;
-	border-radius: 5px;
-	margin-top: 7px;
-	border: 1px solid #3d340c;
-}
-
-legend{
-	font-size: 12px;
-	line-height: 16px;
-	font-weight: 400;
-}
-
-#form-wrapper img{
-	position: relative;
-	bottom: -30px;
-	left: -30px;
-	margin: 0;
-
-}
 
 #why-us ul{
 	list-style-type: none;
@@ -346,7 +299,127 @@ legend{
 	margin: 30px auto 50px 30px;
 }
 
+#form-wrapper{
+	background-color: #3d340c;
+	padding: 20px 20px 0 20px;
+	overflow: hidden;
+}
+
+#form-wrapper > h2, #form-wrapper p{
+	color: white;
+}
+
+form{
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 7px;
+}
+
+form > h2{
+	color: #3d340c;
+}
+
+form .btn{
+	border-radius: 0px;
+	align-self: flex-start;
+	border: none;
+	margin-top: 10px;
+}
+
+input{
+	outline: none;
+	border: none;
+}
+
+fieldset{
+	width: 90%;
+	height: 40px;
+	border-radius: 5px;
+	margin-top: 7px;
+	border: 1px solid #3d340c;
+}
+
+legend{
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+#form-wrapper img{
+	position: relative;
+	bottom: -30px;
+	left: -30px;
+	margin: 0;
+
+}
+
+#reviews{
+	padding: 70px 0 70px 60px;
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: visible;
+
+}
+
+#reviews img:first-of-type{
+	position: absolute;
+	right: 35px;
+}
+
+#reviews img:nth-of-type(2){
+	position: absolute;
+	right: 15px;
+}
+
+#reviews #photo{
+	position: relative;
+	bottom: -45px;
+	z-index: 3;
+}
+
+#reviews div:not(:first-child){
+	border-radius: 10px;
+	min-width: 400px;
+	height: 250px;
+	box-sizing: border-box;
+	padding: 30px 20px;
+	line-height: 1.2;
+	position: relative;
+}
+
+#first-review{
+	background-color: #806f27;
+	color: #fff;	
+	z-index: 2;
+}
+
+#second-review{
+	background-color: #f2d85f;
+	color: #806f27;
+	top: 230px;
+	left: -150px;
+	z-index: 1;
+}
+
+#third-review{
+	background-color: grey;
+	color: #806f27;
+	top: 300px;
+	left: -250px;
+
+}
+
+#reviews h5{
+	color: #000;
+	margin: 0;
+}
+
 #faqs{
+	margin-top: 30px;
 	padding: 20px;
 }
 
@@ -366,7 +439,7 @@ legend{
 	transform: rotate(180deg);
 	transition: all 0.3s;
 	position: absolute;
-	right: 10px;
+	right: 8px;
 }
 .faq-card p{
 	display: none;
@@ -391,8 +464,12 @@ legend{
 	color: #FEFDF7;
 	box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.16), 0px 0px 0px 1px rgba(0, 0, 0, 0.06);
 	margin-left: 10px;
+	padding: 5px;
 	height: 13px;
+}
 
+#footer p:last-child{
+	text-align: center;
 }
 
 @media only screen and (min-width: 651px) {
@@ -608,5 +685,132 @@ legend{
 		margin: 2vw auto;
 
 	}
+
+	#our-team{
+		display: flex;
+		align-items: center;
+		padding: 30px;
+		margin-top: 30px;
+		margin-bottom: 170px;
+	}
+	#our-team h2 {
+		position: relative;
+		top: -70px;
+		left: 0px;
+		display: block;
+		white-space: nowrap;
+		margin-bottom:50px;
+
+	}
 	
+	#yellow-woman{
+		order: 3;
+		position: absolute;
+		right: 10px;
+	}
+
+	#afro-woman{
+		display: none;
+	}
+
+	#our-team p{
+		line-height: 1.8;
+		width: 40vw;
+		position: absolute;
+	}
+
+	#our-gallery{	
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	#our-gallery h2{
+
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	#our-gallery img{
+		width: 30%;
+		height: 250px;
+		margin-bottom: 30px;
+	}
+
+	#form-wrapper{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: baseline;
+		padding: auto 10vw;
+		height: 50vw;
+		box-sizing: border-box;
+	}
+
+	#form-wrapper >h2{
+		position: relative;
+		bottom: -15vh;
+	}
+
+	#form-wrapper p{
+		position: relative;
+		bottom: -15vh;
+		flex-basis: 40%;
+		max-width: 40%;
+
+	}
+	
+	#form-wrapper form{
+		width: 350px;
+		order: 3;
+	}
+
+	#form-wrapper img{
+		position: relative;
+		left: 10vw;
+		bottom: -10vw;
+	}
+
+	#faqs h2{
+		text-align: center
+	}
+	.faq-card{
+		min-height: 30px;
+	}
+
+	#footer{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-around;
+		margin: auto 15vw;
+	}
+
+
+	#footer > img:first-child{
+		height: 40px;
+	}
+
+
+	#footer p{
+		flex-basis: 33%;
+	}
+
+
+	#footer p:first-of-type{
+		order: 4;
+		padding: 10px 60% 10px 0;
+		text-align: left;
+		justify-self: flex-start;
+	}
+
+	#footer ul{
+		flex-basis: 33%;
+		text-align: center;
+	}
+	#footer p:last-of-type{
+		order: 5;
+		align-self: center;
+		flex-basis: 100%;
+	}
 }
