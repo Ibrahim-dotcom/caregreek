@@ -358,66 +358,70 @@ legend{
 }
 
 #reviews{
-	padding: 70px 0 70px 60px;
-	display: flex;
+	padding: 25px;
 	overflow-x: scroll;
 	overflow-y: visible;
-
+	position: relative;
 }
 
-#reviews img:first-of-type{
+#reviews > img:nth-of-type(1){
 	position: absolute;
-	right: 35px;
+	right: 120px;
 }
 
 #reviews img:nth-of-type(2){
 	position: absolute;
-	right: 15px;
+	right: 60px;
 }
 
-#reviews #photo{
-	position: relative;
-	bottom: -45px;
+
+#photo{
 	z-index: 3;
+	position: relative;
+}
+#reviews-wrapper{
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: visible;
+	height: 500px;
 }
 
-#reviews div:not(:first-child){
+#reviews-wrapper div:not(#first-review-wrapper){
 	border-radius: 10px;
 	min-width: 400px;
 	height: 250px;
 	box-sizing: border-box;
 	padding: 30px 20px;
 	line-height: 1.2;
-	position: relative;
 }
 
 #first-review{
 	background-color: #806f27;
 	color: #fff;	
 	z-index: 2;
+	position: relative;
+	top: -40px;
 }
 
 #second-review{
+	position: relative;
+	top: 120px;
+	right: 120px;
 	background-color: #DFD5A8;
-	;
 	color: #806f27;
-	top: 230px;
-	left: -150px;
 	z-index: 1;
 }
 
 #third-review{
+	position: relative;
+	top: 190px;
+	right: 200px;
 	background-color: #E9E8E3;
 	color: #806f27;
-	top: 300px;
-	left: -250px;
+
 
 }
 
-#reviews h5{
-	color: #000;
-	margin: 0;
-}
 
 #faqs{
 	margin-top: 30px;
@@ -465,8 +469,12 @@ legend{
 	color: #FEFDF7;
 	box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.16), 0px 0px 0px 1px rgba(0, 0, 0, 0.06);
 	margin-left: 10px;
-	padding: 5px;
+	padding: 3px;
 	height: 13px;
+}
+
+#footer p:nth-last-child(2){
+	width: max-content;
 }
 
 #footer p:last-child{

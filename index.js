@@ -41,3 +41,24 @@ showMore.forEach(obj =>{
     
     })
 });
+
+let scrollLeft = select('#reviews img:nth-of-type(1)');
+let scrollRight = select('#reviews img:nth-of-type(2)');
+let reviewsWrapper = select('#reviews-wrapper');
+
+scrollRight.addEventListener('click', () =>{
+    console.log('tapped!')
+    reviewsWrapper.scrollBy({
+        left: 350,
+        behaviour: 'smooth'
+    })
+});
+
+scrollLeft.addEventListener('click', () =>{
+    console.log('clicked!')
+    reviewsWrapper.scrollBy({
+        left: -350,
+        behaviour: 'smooth'
+    })
+})
+
